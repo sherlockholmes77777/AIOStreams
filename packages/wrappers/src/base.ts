@@ -147,7 +147,7 @@ export class BaseWrapper {
           headers: headers,
           signal: AbortSignal.timeout(this.indexerTimeout),
         })
-      : fetch(url, {
+      : Fetch(url, {
           method: 'GET',
           headers: headers,
           signal: AbortSignal.timeout(this.indexerTimeout),
